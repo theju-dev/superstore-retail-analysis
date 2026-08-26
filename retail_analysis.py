@@ -201,7 +201,7 @@ total_orders=df["Order ID"].nunique()
 total_customers=df["Customer ID"].nunique()
 overall_profit_margin=(total_profit/total_sales)*100
 print("\n" + "=" * 50)
-print("Executive business summary")
+print("Executive business summary below")
 print("="*50)
 print(f"Total sales: ${total_sales:,.2f}")
 print(f"Total Profit:${total_profit:,.2f}")
