@@ -159,6 +159,8 @@ plt.xticks(rotation=90)
 plt.tight_layout()
 plt.savefig("charts/monthly_profit_analysis.png")
 plt.show()
+customer_analysis=df.groupby("Customer ID").agg(total_sales=("Sales","sum"),
+                                                total_profit=("Profit","sum"))
 yearly_analysis=df.groupby("Order year").agg(total_sales=("Sales","sum"),
                              total_profit=("Profit","sum"),
                              unique_orders=("Order ID","nunique"),
